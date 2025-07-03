@@ -1,0 +1,45 @@
+/* Body pe background image */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/src/assets/bg.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+/* Sab sections transparent ho jayein */
+.middle,.card {
+  background: transparent;
+  margin-top: 50px
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.5); /* poster pe halki dark layer for readability */
+  border: none;
+  color: #fff;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 270px;
+}
+
+.Nav .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 0px 50px 48px;  /* padding-top zyada kyunki navbar fixed hai */
+}
