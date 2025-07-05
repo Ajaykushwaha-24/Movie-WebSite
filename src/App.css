@@ -43,3 +43,31 @@ body {
   gap: 16px;
   padding: 0px 50px 48px;  /* padding-top zyada kyunki navbar fixed hai */
 }
+#year_button {
+  padding: 10px 16px;
+  font-size: 16px;
+  border: 2px solid #4CAF50; /* green border */
+  border-radius: 8px;
+  background-color: #f9f9f9; /* light background */
+  color: #333; /* dark text */
+  appearance: none; /* remove default arrow styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D'10'%20height%3D'10'%20viewBox%3D'0%200%2010%2010'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M0%202.5l5%205%205-5z'%20fill%3D'%234CAF50'%/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#year_button:focus {
+  outline: none;
+  border-color: #388e3c;
+  box-shadow: 0 0 5px rgba(56, 142, 60, 0.5);
+}
+
+#year_button option {
+  background: #fff;
+  color: #333;
+}

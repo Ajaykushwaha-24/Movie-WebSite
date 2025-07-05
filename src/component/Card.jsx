@@ -5,12 +5,9 @@ import Modal from 'react-bootstrap/Modal';
 import '../App.css';
 
 function Card1(prpos) {
-  console.log(prpos,"<======data")
-
   const [showModal, setShowModal] = useState(false);
   const [selectedMovie, setSelectedMovie] = useState(null);
-  
-  
+
   const handleDoubleClick = (item) => {
     setSelectedMovie(item);
     setShowModal(true);
@@ -24,11 +21,11 @@ function Card1(prpos) {
   return (
     <>
       <div className="d-flex flex-wrap gap-3 p-3">
-        {prpos.data.map((movies,item) => (
+        {prpos.data.map((movies) => (
           <Card
             style={{ width: '18rem', cursor: 'pointer' }}
-            key={item.imdbID}
-            onDoubleClick={() => handleDoubleClick(item)}
+            key={movies.imdbID}
+            onDoubleClick={() => handleDoubleClick(movies)}
           >
             <Card.Img variant="top" src={movies.Poster} />
             <Card.Body>
