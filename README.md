@@ -57,4 +57,4 @@ npm run preview
 
 ## Live Demo
 
-_Deployed link will be added here once live._
+[https://movie-web-site-puce.vercel.app/](https://movie-web-site-puce.vercel.app/)
