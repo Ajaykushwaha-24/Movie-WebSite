@@ -1,4 +1,111 @@
-.Nav{
-    width: 1514px;
-    margin-bottom: 700px;
+.Nav {
+  width: 100%;
+}
+
+.app-navbar {
+  width: 100%;
+  padding: 16px 0;
+  background: linear-gradient(to bottom, rgba(10, 10, 15, 0.95) 0%, rgba(10, 10, 15, 0.4) 100%);
+  backdrop-filter: blur(6px);
+  transition: background 0.35s ease, padding 0.35s ease, box-shadow 0.35s ease;
+  z-index: 1030;
+}
+
+.app-navbar--scrolled {
+  background: rgba(10, 10, 15, 0.92);
+  padding: 8px 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.brand {
+  text-decoration: none;
+}
+
+.brand-icon {
+  width: 34px;
+  height: 34px;
+  filter: drop-shadow(0 0 6px rgba(229, 9, 20, 0.6));
+}
+
+.brand-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.brand-accent {
+  color: #e50914;
+}
+
+.nav-links .nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 500;
+  margin-right: 18px;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.nav-links .nav-link:hover,
+.nav-links .nav-link:focus {
+  color: #fff !important;
+}
+
+.nav-links .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: #e50914;
+  transition: width 0.25s ease;
+}
+
+.nav-links .nav-link:hover::after {
+  width: 100%;
+}
+
+.search-form {
+  min-width: 260px;
+}
+
+.search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.search-wrap:focus-within {
+  background: rgba(0, 0, 0, 0.6);
+  border-color: #e50914;
+  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.2);
+}
+
+.search-icon {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  font-style: normal;
+}
+
+.search-input.form-control {
+  background: transparent !important;
+  border: none !important;
+  color: #fff !important;
+  box-shadow: none !important;
+  padding: 4px 0 !important;
+}
+
+.search-input.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.search-input.form-control:focus {
+  outline: none;
 }
